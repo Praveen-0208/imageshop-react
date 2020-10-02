@@ -55,6 +55,7 @@ const Cart = () => {
 			cart.map((photo, index) => {
 				if (photo.id === id) {
 					cart.splice(index, 1);
+					return "";
 				}
 			});
 
@@ -71,7 +72,7 @@ const Cart = () => {
 			<div
 				className="modal fade"
 				id="exampleModal"
-				tabindex="-1"
+				tabIndex="-1"
 				role="dialog"
 				aria-labelledby="exampleModalLabel"
 				aria-hidden="true"

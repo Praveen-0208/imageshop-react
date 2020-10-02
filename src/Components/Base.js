@@ -10,7 +10,7 @@ const Base = ({ children, history }) => {
 
 	const currentTab = (history, path) => {
 		if (history.location.pathname === path) {
-			return { color: "#76a7c5" };
+			return { color: "#f2f2f2" };
 		} else {
 			return { color: "#ffffff" };
 		}
@@ -71,10 +71,10 @@ const Base = ({ children, history }) => {
 				>
 					<a
 						className="navbar-brand"
-						href="http://localhost:3000/"
+						href="#"
 						style={{
 							fontFamily: "'Noto Sans JP', sans-serif",
-							fontSize: "2rem",
+							fontSize: "2.8vw",
 						}}
 					>
 						<strong style={{ textShadow: "1px 4px 4px rgba(0,0,0,0.73)" }}>

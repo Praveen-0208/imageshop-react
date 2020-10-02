@@ -14,7 +14,7 @@ const Home = () => {
 							<p
 								className="text-white text-center my-3"
 								style={{
-									fontSize: "4rem",
+									fontSize: "3rem",
 									textShadow: "1px 4px 4px rgba(0, 0, 0, 0.73)",
 								}}
 							>
