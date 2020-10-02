@@ -39,7 +39,7 @@ const Cart = () => {
 		let amount = 0;
 		if (photos) {
 			photos.map((photo) => {
-				amount += photo.price;
+				return (amount += photo.price);
 			});
 		}
 

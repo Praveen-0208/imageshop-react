@@ -14,7 +14,6 @@ const ImageDisplay = ({ photo }) => {
 			cart.find((photo) => {
 				if (photo.id === id) {
 					setFlag("remove");
-					return;
 				}
 			});
 		}
@@ -22,7 +21,7 @@ const ImageDisplay = ({ photo }) => {
 
 	useEffect(() => {
 		itemInCart(photo.id);
-	}, []);
+	}, [photo.id]);
 
 	const addToCart = () => {
 		let cart = [];
