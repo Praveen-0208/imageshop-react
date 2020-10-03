@@ -77,7 +77,7 @@ const ImageDisplay = ({ photo }) => {
 				</p>
 			</div>
 			{flag === "remove" ? (
-				<div className="col-6 offset-3 mb-3 buttons">
+				<div className="col-8 offset-2 mb-3 buttons">
 					<button
 						className="btn btn-block btn-outline-warning"
 						style={{
@@ -99,7 +99,7 @@ const ImageDisplay = ({ photo }) => {
 					</button>
 				</div>
 			) : (
-				<div className="col-6 offset-3 mb-3 buttons">
+				<div className="col-8 offset-2 mb-3 buttons">
 					<button
 						className="btn btn-block btn-outline-success"
 						style={{

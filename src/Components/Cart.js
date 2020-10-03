@@ -28,7 +28,7 @@ const Cart = () => {
 	const cartIsEmpty = () => {
 		return (
 			<div className="container">
-				<p className="display-4 text-center my-5 alert alert-primary">
+				<p className="text-center my-5 alert alert-primary">
 					Cart looks empty...Lets add some photos..!!
 				</p>
 			</div>
@@ -89,6 +89,7 @@ const Cart = () => {
 				</div>
 			</div>
 			{cartEmpty && cartIsEmpty()}
+			<div className="container-fluid">
 			{!cartEmpty && (
 				<div className="row mt-3">
 					<div className="col-12">
@@ -98,6 +99,8 @@ const Cart = () => {
 					</div>
 				</div>
 			)}
+			</div>
+			
 			<div className="container my-5">
 				<div className="row">
 					{photos &&

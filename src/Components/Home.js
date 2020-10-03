@@ -9,8 +9,8 @@ const Home = () => {
 		<Base>
 			<section className=" jumbotron jumbotron-fluid " id="jumbo">
 				<div className="container">
-					<div className="row">
-						<div className="col-6 offset-3">
+					<div className="row p-5">
+						<div className="col-md-6 offset-md-3 col-sm-8 offset-sm-2">
 							<p
 								className="text-white text-center my-3"
 								style={{

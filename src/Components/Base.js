@@ -7,6 +7,7 @@ const Base = ({ children, history }) => {
 	const cartHook = useState("");
 
 	const [count, setCount] = useState();
+	const [bgtoggle,setBgtoggle] = useState(false);
 
 	const currentTab = (history, path) => {
 		if (history.location.pathname === path) {
@@ -71,11 +72,9 @@ const Base = ({ children, history }) => {
 				>
 					<a
 						className="navbar-brand"
-						href="#"
-						style={{
-							fontFamily: "'Noto Sans JP', sans-serif",
-							fontSize: "2.8vw",
-						}}
+						href="/"
+						id="navbrand"
+						
 					>
 						<strong style={{ textShadow: "1px 4px 4px rgba(0,0,0,0.73)" }}>
 							IMAGESHOP
@@ -89,6 +88,7 @@ const Base = ({ children, history }) => {
 						<button
 							className="navbar-toggler ml-auto mx-1"
 							type="button"
+							onClick={() => {setBgtoggle(!bgtoggle)}}
 							data-toggle="collapse"
 							data-target="#navbarSupportedContent"
 							aria-controls="navbarSupportedContent"
@@ -115,11 +115,11 @@ const Base = ({ children, history }) => {
 							</li>
 
 							<li className="nav-item d-none d-sm-block">
-								<Link to="/cart" className="mx-2 ">
+								<Link to="/cart" className="nav-link">
 									<FaShoppingCart style={currentTab(history, "/cart")} />
 									<span
 										className="badge badge-pill badge-primary"
-										style={{ fontSize: "1rem" }}
+										style={{ fontSize: "10px" }}
 									>
 										{count}
 									</span>
@@ -141,7 +141,6 @@ const Base = ({ children, history }) => {
 						style={{
 							fontFamily: "'Noto Sans JP', sans-serif",
 							textShadow: "1px 4px 4px rgba(0, 0, 0, 0.73)",
-							fontSize: "2rem",
 						}}
 					>
 						All images used here are open-source and taken from{" "}
