@@ -4,9 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-/.vscode
-/package-lock.json
-/.netlify
+
 # testing
 /coverage
 

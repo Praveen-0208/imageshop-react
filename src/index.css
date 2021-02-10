@@ -1,76 +1,76 @@
 body {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-		sans-serif;
-	background-color: #ffffff;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .navbar {
-	background: transparent;
+  background: transparent;
 }
 
-#navbrand{
-	font-family: 'Noto Sans JP', sans-serif;
-	font-size: 2rem;
+#navbrand {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 2rem;
 }
 
 #imagediv > img {
-	transition: 0.5s;
+  transition: 0.5s;
 }
 #imagediv > img:hover {
-	opacity: 0.3;
+  opacity: 0.3;
 }
 .buttons {
-	opacity: 0;
-	display: none;
+  opacity: 0;
+  display: none;
 }
 #imagediv:hover .buttons {
-	opacity: 1 !important;
-	transition: ease-in-out 0.8s, display 0.8s;
-	display: block !important;
+  opacity: 1 !important;
+  transition: ease-in-out 0.8s, display 0.8s;
+  display: block !important;
 }
 .imagedisplay {
-	height: 375px;
-	overflow: hidden;
+  height: 375px;
+  overflow: hidden;
 }
 
 .jumbotron {
-	background-image: url("./jumbotronBG.jpg");
-	background-size: cover;
+  background-image: url("./jumbotronBg.jpg");
+  background-size: cover;
 }
 
 .nav-item {
-	font-family: "Noto Sans JP", sans-serif;
-	text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.73);
-	font-size: 1.5rem;
+  font-family: "Noto Sans JP", sans-serif;
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.73);
+  font-size: 1.5rem;
 }
 
 .nav-item:hover {
-	transform: scale(1.02);
-	transition: transform 0.5s;
+  transform: scale(1.02);
+  transition: transform 0.5s;
 }
 .navscroll {
-	box-shadow: 1px 13px 19px -2px rgba(73, 71, 71, 0.68);
-	background: rgb(162, 175, 181);
-	background: linear-gradient(
-		90deg,
-		rgba(162, 175, 181, 1) 1%,
-		rgba(219, 213, 207, 1) 44%,
-		rgba(200, 195, 192, 1) 92%
-	);
+  box-shadow: 1px 13px 19px -2px rgba(73, 71, 71, 0.68);
+  background: rgb(162, 175, 181);
+  background: linear-gradient(
+    90deg,
+    rgba(162, 175, 181, 1) 1%,
+    rgba(219, 213, 207, 1) 44%,
+    rgba(200, 195, 192, 1) 92%
+  );
 }
 
-@media (max-width: 576px){
-	#navbrand{
-		font-size: 1rem;
-	}
-	.navbar-toggler-icon{
-		font-size: 0.8rem;
-	}
+@media (max-width: 576px) {
+  #navbrand {
+    font-size: 1rem;
+  }
+  .navbar-toggler-icon {
+    font-size: 0.8rem;
+  }
 }
 
 code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-		monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
